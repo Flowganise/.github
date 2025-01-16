@@ -3,7 +3,7 @@
 The analytics script supports three types of events:
 
 - Pageviews (automatic)
-- Click events
+- Custom events
 - Transaction events
 
 ## Installation
@@ -32,12 +32,12 @@ Pageviews are tracked automatically. You don't need to implement anything specif
 - Track navigation between pages in single-page applications
 - Avoid duplicate tracking on page reloads
 
-### Click Events
+### Custom Events
 
 Track user interactions like button clicks, link clicks, or any other clickable elements.
 
 ```javascript
-fgan("click", label, metadata?)
+fgan("custom", label, metadata?)
 ```
 
 Parameters:
@@ -49,16 +49,16 @@ Examples:
 
 ```javascript
 // Basic click tracking
-fgan("click", "signup-button");
+fgan("custom", "signup-button");
 
 // Click with location metadata
-fgan("click", "download-pdf", {
+fgan("custom", "download-pdf", {
   location: "header",
   fileName: "user-guide.pdf",
 });
 
-// Navigation click
-fgan("click", "menu-item", {
+// Navigation custom
+fgan("custom", "menu-item", {
   section: "main-menu",
   destination: "pricing",
 });
