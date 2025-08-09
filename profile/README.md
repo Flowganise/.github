@@ -42,6 +42,3 @@ Parameters:
 - `currency` (string, required): Three-letter currency code (e.g., "USD", "EUR")
 - `value` (number, required): Transaction amount
 
-```
-
-```
