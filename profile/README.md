@@ -11,10 +11,7 @@ The analytics script supports three types of events:
 Add the analytics script to your website with your site ID:
 
 ```html
-<script
-  async
-  src="https://script.flowganise.com/?site-id=your-site-id"
-></script>
+<script async src="https://script.flowganise.com/?site-id=your-site-id"></script>
 ```
 
 That's it! The script will automatically start tracking pageviews and provide the `fgan` function for custom events.
